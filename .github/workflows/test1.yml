@@ -38,6 +38,7 @@ jobs:
       run: |
         # Docker build
         docker build -t manp .
-        docker push 713356916149.dkr.ecr.us-east-1.amazonaws.com/manp:latest
+        docker tag manp:latest public.ecr.aws/i6g9y1c8/manp:latest
+        docker push public.ecr.aws/i6g9y1c8/manp:latest
         
     
