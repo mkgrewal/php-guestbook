@@ -38,7 +38,7 @@ jobs:
         IMAGE_TAG: php-guestbook
       run: |
         # Docker build
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        docker build -t manpreet .
+        docker push 713356916149.dkr.ecr.us-east-1.amazonaws.com/manpreet:latest
         
     
