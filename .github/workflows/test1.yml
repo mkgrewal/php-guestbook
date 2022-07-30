@@ -33,11 +33,11 @@ jobs:
     - name: Triggering image to Amazon ECR
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: manpreet
+        ECR_REPOSITORY: manp
         IMAGE_TAG: php-guestbook
       run: |
         # Docker build
-        docker build -t manpreet .
-        docker push 713356916149.dkr.ecr.us-east-1.amazonaws.com/manpreet:latest
+        docker build -t manp .
+        docker push 713356916149.dkr.ecr.us-east-1.amazonaws.com/manp:latest
         
     
